@@ -1,0 +1,84 @@
+.container {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 549px) {
+	.title-logo {
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	.text-right {
+		text-align: center;
+		margin-right: 0;
+	}
+	.title-text {
+		font-size: 40px;
+	}
+	.work {
+		padding-left: 0;
+	}
+	h2 {
+		text-align: center;
+	}
+	.portfolio-item {
+	  width: 75%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	footer {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  #social {
+  	padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 550px) {
+	.header-logo {
+		width: 50%;
+		margin-top: 18px;
+	}
+	.header-title {
+		width: 50%;
+	}
+	.portfolio-item {
+		width: calc((100% - 10px)/2);
+	  float: left;
+	  margin-right: 10px;
+  }
+  .sunflower {
+  	margin-right: 0;
+  }
+  .portfolio-item:last-of-type {
+  	display: block;
+  	margin-right: auto;
+  	margin-left: auto;
+	}
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .header-logo {
+		margin-top: 0;
+	}
+  h4 {
+		display: block;
+	}
+	.portfolio-item {
+		width: calc((100% - 20px)/3);
+	  float: left;
+	  margin-right: 10px;
+	  margin-left: 0;
+  }
+  .portfolio-item:last-of-type {
+  	margin-right: 0;
+  }
+}
